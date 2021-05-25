@@ -11,20 +11,20 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="20dp"
-        android:hint="Enter note here"
+        android:hint="@string/enter_note_here"
         android:id="@+id/editText"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/editText"
         android:layout_margin="20dp"
-        android:id="@+id/button"
+        android:id="@+id/addbutton"
         android:text="Submit"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/addbutton"
         android:layout_margin="20dp"
         tools:listitem="@layout/item_notes"
         android:id="@+id/recycler"/>
