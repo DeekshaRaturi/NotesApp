@@ -31,14 +31,21 @@ class NotesAdapter(private val context: Context,private val listener: INotesAdap
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val currentNote = allNotes[position]
         holder.textView.text = currentNote.name
+
+
     }
 
-    override fun getItemCount() = allNotes.size
+    override fun getItemCount() = 0
 
     fun updateList(newList: List<Note>){
         allNotes.clear()
         allNotes.addAll(newList)
         notifyDataSetChanged()
+
+
+
+
+
     }
 
 }
