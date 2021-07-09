@@ -26,7 +26,7 @@ class NotesAdapter(private val context: Context,private val listener: INotesAdap
         }
          return viewHolder
 
-        
+
 
     }
 
